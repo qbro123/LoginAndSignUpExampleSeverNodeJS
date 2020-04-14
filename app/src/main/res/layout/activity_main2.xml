@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:hint="Nhập họ và tên"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/edtFullname"
+            />
+        <EditText
+            android:hint="Nhập username"
+            android:layout_below="@+id/edtFullname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/edtUsername"
+            />
+        <EditText
+            android:hint="Nhập password"
+            android:layout_below="@+id/edtUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtPassword"
+            />
+        <Button
+            android:layout_centerHorizontal="true"
+            android:text="REGISTER"
+            android:layout_below="@+id/edtPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnRegister"/>
+
+
+
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Đăng nhập"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif"
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"/>
+
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
